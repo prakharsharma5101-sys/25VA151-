@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Layout</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        .box{
+            border: 4px solid black;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #header{
+            background: #47A9FF;
+        }
+
+        #nav-global{
+            background: #47A9FF;
+        }
+
+        #page-title{
+            background: #f30eae;
+        }
+
+        #content1, #content2, #content3{
+            background: #f57d05;
+        }
+
+        #nav-local, #sidebar{
+            background: #FFF7A1;
+        }
+
+        #footer{
+            background: #DCDCDC;
+        }
+
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }
+
+        .lower-container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="header" class="box">#Header</div>
+
+    <div id="nav-global" class="box">#Nav Global</div>
+
+    <div class="container">
+
+        <div>
+            <div id="page-title" class="box">#Page Title</div>
+            <div id="content1" class="box" style="height:200px;">#Content 1</div>
+
+            <div class="lower-container">
+                <div id="content2" class="box" style="height:175px;">#Content 2</div>
+                <div id="content3" class="box" style="height:175px;">#Content 3</div>
+            </div>
+        </div>
+
+        <div>
+            <div id="nav-local" class="box" style="height:201px;">#Nav Local</div>
+            <div id="sidebar" class="box" style="height:250px;">#Sidebar</div>
+        </div>
+
+    </div>
+
+    <div id="footer" class="box">#Footer</div>
+
+</body>
+</html>
