@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment 6</title>
-</head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .header-box {
+            background-color: #ccc; 
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .header-box h1 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .header-box span {
+            color: #b00; 
+            font-weight: bold;
+        }
+        .nav-container {
+            width: 90%;
+            margin: 0 auto; 
+            padding: 10px 0;
+            background-color: #fff; 
+            border: 1px solid #000;
+        }
+        .nav-section {
+            padding: 10px 15px;
+        }
+        .menu-row-1 {
+            clear: both; 
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .menu-row-1 a {
+            display: inline-block; 
+            padding: 8px 15px;
+            margin-right: 10px;
+            background-color: #b0e0e6; 
+            color: #330066; 
+            text-decoration: none;
+            border: 1px solid #87ceeb;
+            border-radius: 3px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .menu-row-2 {
+            margin-top: 10px;
+        }
+        .menu-row-2 a {
+            float: left; 
+            padding: 8px 15px;
+            margin-right: 10px;
+            background-color: #90ee90; 
+            color: #006400;
+            text-decoration: none;
+            border: 1px solid #3cb371;
+            border-radius: 3px;
+            font-size: 0.9em;
+            text-align: center;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both; 
+        }
+    </style>
 <body>
-    <nav>
-        <u1>
-            <li><a href="">about</a></li>
-            <li><a href="">admission</a></li>
-            <li><a href="">academics</a></li>
-            <li><a href="">club </a></li>
-            <li><a href="">campus </a></li>
-            <li><a href="">placement</a></li>
-            <li><a href="">research</a></li>
-        </u1>
-    </nav>
-    
+
+    <div class="header-box">
+        <h1>My <span>Website</span> Navigation</h1>
+    </div>
+
+    <div class="nav-container">
+        
+        <div class="nav-section menu-row-1">
+            <a href="https://www.abes.ac.in/visionmission.html">vision</a>
+            <a href="https://www.abes.ac.in/bog.html">leadership</a>
+            <a href="https://www.abes.ac.in/courses-offered.html#adm-procedure-description">admisson</a>
+            <a href="https://www.abes.ac.in/academics/computer-science-engineering.html">cse achivement</a>
+        </div>
+
+        <div class="nav-section menu-row-2 clearfix">
+            <a href="https://www.abes.ac.in/technical-clubs.html">technical club </a>
+            <a href="https://www.abes.ac.in/nontechnical-clubs.html">non-technical club</a>
+            <a href="https://www.abes.ac.in/innovation.html">research</a>
+            <a href="https://abes.ac.in/ecell/">entrepreneurship</a>
+        </div>
+        
+    </div>
+
 </body>
 </html>
